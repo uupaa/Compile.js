@@ -27,17 +27,13 @@ function Compile_exec(input,      // @arg PathString:
                       callback) { // @arg Function: callback(err, stdout, stderr):void
                                   // @help: Compile.exe
 
-    var command = "java -jar ../vendor/compiler.jar" +
+    var command = "java -jar vendor/compiler.jar" +
                   " --js_output_file " + output +
                   " --js "             + input +
                   options;
 
     childProcess.exec(command, function(err, stdout, stderr) {
-        if (err || stderr) {
-            callback(new Error(stderr));
-        } else {
-            callback(null);
-        }
+        callback(err, stdout, stderr);
     });
 }
 
