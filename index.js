@@ -1,6 +1,6 @@
 // @name: Compile.js
-// @require: none
-// @cutoff: @assert @node
+// @require: fs, child_process, path
+// @cutoff: @node
 //
 // Closure Compiler Service
 //  http://closure-compiler.appspot.com/home
@@ -26,11 +26,12 @@ function Compile_exec(input,      // @arg PathString:
                       options,    // @arg String:
                       callback) { // @arg Function: callback(err, stdout, stderr):void
                                   // @help: Compile.exe
+    var jar = require("path").join(__dirname, 'vendor/compiler.jar');
 
-    var command = "java -jar vendor/compiler.jar" +
+    var command = "java -jar " + jar +
                   " --js_output_file " + output +
-                  " --js "             + input +
-                  " "                  + options;
+                  " --js " + input +
+                  " "  + options;
 
     childProcess.exec(command, function(err, stdout, stderr) {
         callback(err, stdout, stderr);
