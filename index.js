@@ -30,7 +30,7 @@ function Compile_exec(input,      // @arg PathString:
     var command = "java -jar ../vendor/compiler.jar" +
                   " --js_output_file " + output +
                   " --js "             + input +
-                  options.join(" ");
+                  options;
 
     childProcess.exec(command, function(err, stdout, stderr) {
         if (err || stderr) {
