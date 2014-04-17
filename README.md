@@ -8,25 +8,30 @@ Closure Compiler wrapper.
 
 # Document
 
-- https://github.com/uupaa/Compile.js/wiki/Compile
-- https://github.com/uupaa/WebModule ([Slide](http://uupaa.github.io/Slide/slide/WebModule/index.html))
-- https://github.com/uupaa/Help.js ([Slide](http://uupaa.github.io/Slide/slide/Help.js/index.html))
+- [WebModule](https://github.com/uupaa/WebModule) ([Slide](http://uupaa.github.io/Slide/slide/WebModule/index.html))
+- [Development](https://github.com/uupaa/WebModule/wiki/Development)
+- [Compile.js wiki](https://github.com/uupaa/Compile.js/wiki/Compile)
 
 
-# for Developers
+# How to use
 
-1. Install development dependency tools
+```sh
+$ npm install -g uupaa.compile.js
+```
 
-    ```sh
-    $ brew install node
-    $ npm install -g plato
-    ```
+```js
+// for Node.js
+var Compile = require("uupaa.compile.js");
+var inputFile = "./input.js";
+var outputFile = "./output.js";
+var options = "--compilation_level ADVANCED_OPTIMIZATIONS --formatting pretty_print";
 
-2. Clone Repository and Install
-
-    ```sh
-    $ git clone git@github.com:uupaa/Compile.js.git
-    $ cd Compile.js
-    $ npm install
-    ```
+Compile.exe(inputFile, outputFile, options, function(err, stdout, stderr) {
+    if (err || stderr) {
+        console.log("ERR");
+    } else {
+        console.log("OK");
+    }
+});
+```
 
