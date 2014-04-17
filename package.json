@@ -1,0 +1,24 @@
+{
+  "name":           "uupaa.compile.js",
+  "version":        "0.0.1",
+  "description":    "Closure Compiler wrapper",
+  "url":            "https://github.com/uupaa/Compile.js",
+  "keywords":       ["Closure", "Compiler", "Compile", "util", "uupaa", "WebModule"],
+  "repository": {
+    "type":         "git",
+    "url":          "https://github.com/uupaa/Compile.js.git"
+  },
+  "scripts": {
+      "test":       "",
+      "test-node":  ""
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "bin":            "index.js",
+  "main":           "index.js",
+  "author":         "uupaa <uupaa.js@gmail.com>",
+  "license":        "MIT",
+  "contributors":   []
+}
