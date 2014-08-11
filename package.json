@@ -1,14 +1,15 @@
 {
   "name":           "uupaa.compile.js",
-  "version":        "0.1.6",
+  "version":        "0.1.7",
   "description":    "Closure Compiler wrapper",
   "url":            "https://github.com/uupaa/Compile.js",
-  "keywords":       ["Closure", "Compiler", "Compile", "util", "uupaa", "WebModule"],
+  "keywords":       ["Closure", "Compiler", "Compile", "util", "uupaa", "WebModule", "Stable"],
   "repository": {
     "type":         "git",
     "url":          "https://github.com/uupaa/Compile.js.git"
   },
   "scripts": {
+      "init":       "npm update",
       "test":       "",
       "test-node":  ""
   },
