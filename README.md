@@ -37,3 +37,11 @@ Compile.exe(inputFile, outputFile, options, function(err, stdout, stderr) {
 });
 ```
 
+## History
+
+- Compiler.js version 0.2.0 -       with Closure Compiler v20140923
+    - support new feature
+        - `--language_in ECMASCRIPT6` and `--language_in ECMASCRIPT6_STRICT`
+        - `--language_out ECMASCRIPT5` and `--language_out ECMASCRIPT5_STRICT`
+- Compiler.js version 0.0.0 - 0.1.7 with Closure Compiler v20131014
+
