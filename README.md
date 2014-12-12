@@ -7,7 +7,8 @@ Closure Compiler wrapper.
 ## Document
 
 - [Compile.js wiki](https://github.com/uupaa/Compile.js/wiki/Compile)
-- [Closure Compiler Service](http://closure-compiler.appspot.com/home)
+- [Closure Compiler](https://github.com/google/closure-compiler)
+    - [Compiler Service](http://closure-compiler.appspot.com/home)
 - [WebModule](https://github.com/uupaa/WebModule)
     - [Slide](http://uupaa.github.io/Slide/slide/WebModule/index.html)
     - [Development](https://github.com/uupaa/WebModule/wiki/Development)
@@ -39,6 +40,7 @@ Compile.exe(inputFile, outputFile, options, function(err, stdout, stderr) {
 
 ## History
 
+- Compiler.js version 0.2.1 -       with Closure Compiler v20141120
 - Compiler.js version 0.2.0 -       with Closure Compiler v20140923
     - support new feature
         - `--language_in ECMASCRIPT6` and `--language_in ECMASCRIPT6_STRICT`

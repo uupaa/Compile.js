@@ -1,6 +1,6 @@
 {
   "name":           "uupaa.compile.js",
-  "version":        "0.2.0",
+  "version":        "0.2.1",
   "description":    "Closure Compiler wrapper",
   "url":            "https://github.com/uupaa/Compile.js",
   "keywords":       ["Closure", "Compiler", "Compile", "util", "uupaa", "WebModule", "Stable"],
