@@ -2,7 +2,7 @@
 
 [![npm](https://nodei.co/npm/uupaa.compile.js.png?downloads=true&stars=true)](https://nodei.co/npm/uupaa.compile.js/)
 
-Closure Compiler wrapper.
+[Closure Compiler](https://github.com/google/closure-compiler) wrapper.
 
 ## Document
 
@@ -40,6 +40,7 @@ Compile.exe(inputFile, outputFile, options, function(err, stdout, stderr) {
 
 ## History
 
+- Compiler.js version 0.2.2 -       with Closure Compiler v20160619
 - Compiler.js version 0.2.1 -       with Closure Compiler v20141120
 - Compiler.js version 0.2.0 -       with Closure Compiler v20140923
     - support new feature
